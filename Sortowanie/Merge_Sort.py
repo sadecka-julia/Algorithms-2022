@@ -32,8 +32,9 @@ def merge(arr, l, p, m):
         j += 1
         k += 1
 
+
 if __name__ == '__main__':
     arr = [9, 8, 7, 6, 5, 4, 3, 2, 11, 0, 4, 3, 9, 91, 102, 4]
-    print('Ciąg na początku: \n', arr)
+    print('Ciąg na początku: \n', *arr)
     mergeSort(arr, 0, len(arr)-1)
-    print('Ciąg na końcu: \n', arr)
+    print('Ciąg na końcu: \n', *arr)

@@ -6,7 +6,7 @@
 #  2. INTEGER_ARRAY arr
 #
 
-def insertionsort1(n, arr):
+def insertionsort1(arr):
 
     for i in range(1, len(arr)):
         x = arr[i]
@@ -14,15 +14,14 @@ def insertionsort1(n, arr):
         while j >= 0 and x < arr[j]:
             arr[j + 1] = arr[j]
             j = j - 1
-            print(*arr)
+            # print(*arr)
         arr[j + 1] = x
         # print(*arr, sep=" ")
     # Write your code here
 
 
 if __name__ == '__main__':
-    n = int(input().strip())
-
+    # n = int(input().strip())
     arr = list(map(int, input().rstrip().split()))
-
-    insertionsort1(n, arr)
+    insertionsort1(arr)
+    print(*arr)
